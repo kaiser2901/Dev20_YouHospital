@@ -1,0 +1,655 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #1c1c1c;
+	letter-spacing: 1px;
+    line-height: 1.42857;
+}
+
+nav ul.pagination li.page-item a.page-link {
+    color: #999;
+    transition: 0.4s all;
+}
+
+nav ul.pagination li.page-item a.page-link.active {
+    color: #1c1c1c;
+}
+
+nav ul.pagination li.page-item a.page-link:hover {
+    color: #1c1c1c;
+}
+
+nav ul.pagination li.page-item a.page-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+form div.form-group p {
+    margin-top: 16px;
+}
+
+a.dropdown-item {
+    color: #999;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+ /* page-header */
+header.page-header {
+	padding: 15px 0;
+	background-color: #f8f8f8;
+}
+header.page-header div.left-header img {
+	display: inline-block;
+	height: 30px;
+	margin-right: 10px;
+}
+header.page-header div.left-header a {
+	text-transform: uppercase;
+	color: #999;
+	font-size: 14px;
+	transition: 0.4s all;
+	text-decoration: none;
+}
+header.page-header div.left-header a:hover {
+	color: #1c1c1c;
+}
+header.page-header div.right-header div.notification {
+	display: inline-block;
+    margin-right: 15px;
+}
+header.page-header div.right-header div.notification > a {
+	color: #999;
+    font-size: 20px;
+    vertical-align: middle;
+    transition: 0.4s all;
+}
+header.page-header div.right-header div.notification > a:hover {
+	color: #1c1c1c;
+}
+header.page-header div.right-header div.nav-account a.dropdown-toggle {
+	color: #999;
+	transition: 0.4s all;
+	text-decoration: none;	
+}
+header.page-header div.right-header div.nav-account a.dropdown-toggle:hover {
+	color: #1c1c1c;
+}
+header.page-header div.right-header div.nav-account img{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+header.page-header div.right-header div.nav-account div.dropdown-menu {
+	padding: 0;
+} 
+header.page-header div.right-header div.nav-account div.dropdown-menu a{
+	font-size: 14px;
+	padding: 10px 24px;
+}
+header.page-header div.right-header div.nav-account div.dropdown-menu a i {
+	display: inline-block;
+	width: 20px;
+	font-size: 14px;
+	padding-right: 7px; 
+}
+header.page-header div.right-header div.nav-account div.dropdown-menu a:last-child{
+	border-top: 1px solid #e8e8e8;
+}
+/*Navigation*/
+div.navigation {
+    padding: 7px 0;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li {
+    display: flex;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li:after{
+    content: "|";
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin: 2px 20px;
+    color: #727475;
+    font-weight: 400;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li a{
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: 0.4s all;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li a:hover {
+    color: #1c1c1c;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li:last-child:after {
+    content: '';
+    margin: 0;
+}
+div.navigation nav.navbar a.navbar-brand{
+    display: none;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li div.dropdown-menu {
+	padding: 0;
+} 
+div.navigation nav.navbar div.collapse ul.navbar-nav li div.dropdown-menu a{
+	font-size: 14px;
+	padding: 10px 24px;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li div.dropdown-menu a i {
+	display: inline-block;
+	width: 20px;
+	font-size: 14px;
+	padding-right: 7px; 
+}
+@media(max-width: 1200px){
+	div.navigation nav.navbar div.collapse ul.navbar-nav li {
+		padding: 10px 20px;
+		border-bottom: 1px dashed #e8e8e8;
+	}
+    div.navigation nav.navbar div.collapse ul.navbar-nav li:after {
+        content: '';
+    } 
+    div.navigation nav.navbar a.navbar-brand{
+        display: block;
+    }
+}
+
+/*Footer*/
+div.footer {
+	padding: 15px 0;
+	background-color: #f8f8f8;
+	text-align: center;
+}
+div.footer p {
+	color: #999;
+	margin-bottom: 0;
+}
+
+/*breadcrumbs*/
+
+div.breadcrumbs {
+    background-color: #f8f8f8;
+}
+div.breadcrumbs div.container {
+    padding: 17px 0;
+}
+div.breadcrumbs div.container a {
+    color: #999;
+    font-size: 13px;
+    margin: 0 5px;
+    transition: 0.4s all;
+    text-decoration: none;
+}
+div.breadcrumbs div.container a.active {
+    color: #1c1c1c;
+}
+div.breadcrumbs div.container a:hover {
+    color: #1c1c1c;
+}
+div.breadcrumbs div.container span {
+    color: #999;
+    font-size: 13px;
+    margin: 0 5px;
+}
+@media (max-width: 576px) {
+    div.breadcrumbs {
+        padding: 0 10px;
+    }
+}
+
+/* statistic */
+div.statistic {
+    padding: 50px 0;
+}
+div.statistic div.statistic-patient {
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    padding: 28px 25px;
+    border-radius: 0.35rem;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-left: .25rem solid #4e73df;
+    width: 90%!important;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+div.statistic div.statistic-patient div.col-auto i {
+    color: #dddfeb;
+    font-size: 40px;
+    line-height: 50px;
+}
+div.statistic div.statistic-patient div.col h6 {
+    color: #4e73df;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+div.statistic div.statistic-patient div.col p {
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #5a5c69;
+    font-size: 1.25rem;
+}
+@media (min-width: 1200px){
+    div.statistic div.statistic-patient {
+        max-width: 23%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    div.statistic div.statistic-patient {
+        max-width: 48%;
+    }
+}
+@media (max-width: 768px){
+    div.statistic div.statistic-patient {
+        margin: 20px auto;
+    }
+}
+div.statistic div.title h4 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+div.statistic div.statistic-doctor {
+    border-left: .25rem solid #1cc88a!important;
+}
+div.statistic div.statistic-doctor div.col h6 {
+    color: #1cc88a!important;
+}
+div.statistic div.statistic-app {
+    border-left: .25rem solid #36b9cc!important;
+}
+div.statistic div.statistic-app div.col h6 {
+    color: #36b9cc!important;
+}
+div.statistic div.statistic-emp {
+    border-left: .25rem solid #f6c23e!important;
+}
+div.statistic div.statistic-emp div.col h6 {
+    color: #f6c23e!important;
+}
+
+/* list-patient */
+
+div.list-patient {
+    padding: 40px 30px 50px 30px;
+}
+div.list-patient div.menu-bar div.form-search form input[type='text'] {
+    padding: 1px 1px 1px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    -webkit-appearance: none;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+}
+div.list-patient div.menu-bar div.form-search form input:focus {
+    outline: none;
+    box-shadow: none;
+}
+div.list-patient div.menu-bar div.form-search form button {
+    text-align: center;
+    font-size: 16px;
+    height: 40px;
+    background: #0066a6;
+    color: #fff;
+    border-radius: 4px;
+    display: block;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.4s all;
+    cursor: pointer;
+    margin-left: 10px;
+}
+div.list-patient div.menu-bar div.form-search form button.btn:hover {
+	opacity: 1;
+}
+div.list-patient div.menu-bar div.form-search form button.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+div.list-patient div.data-table-patient {
+    margin-top: 20px;
+}
+div.list-patient div.data-table-patient table tr th, div.list-patient div.data-table-patient table tr td {
+    vertical-align: middle;
+    text-align: center;
+}
+div.list-patient div.data-table-patient table tr td a.pres {
+    background: url(../../../assets/images/background/action-prescript.png) scroll no-repeat center center transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    overflow: hidden;
+    line-height: 0px;
+    text-transform: capitalize;
+}
+div.list-patient div.title h4 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+div.list-patient div.data-table-patient table tr td {
+    font-size: 14px;
+}
+div.list-patient div.data-table-patient table tr td b {
+    cursor: pointer;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+div.list-patient div.data-table-patient table tr.info-pat {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+    transition: 0.4s all;
+}
+div.list-patient div.data-table-patient table tr.info-pat.active {
+    opacity: 1;
+    visibility: visible;
+}
+div.list-patient div.data-table-patient table tr.info-pat td {
+    text-align: left;
+}
+div.list-patient div.data-table-patient table tr.info-pat:hover {
+    background-color: #fff;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab.ui-widget-content {
+    border: none;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab ul.ui-widget-header {
+    list-style: none;
+    margin-top: 30px;
+    background: #fff;
+    border: none; 
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab ul li {
+    margin-left: 20px; 
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab ul li.ui-state-active {
+    background-color: #0066a6;
+    border: 1px solid #0066a6;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab ul li a {
+    text-decoration: none;
+    padding: 0 20px;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab div.ui-tabs-panel.ui-corner-bottom.ui-widget-content {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab div.bar-code {
+    margin-left: 30px;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab div.bar-code img{
+    width: 200px;
+    height: 80px;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab table tr td {
+    align-items: center;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab table tr td a {
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 30px; 
+    height: 30px;
+    background: #0066a6;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.4s all;
+    cursor: pointer;
+    margin-left: 5px;
+}
+div.list-patient div.data-table-patient table tr td div.divide-tab table tr td a:hover {
+    opacity: 1;
+}
+
+/* Check Up */
+div.checkup {
+    padding: 50px 0;
+}
+div.checkup div.history-checkup, div.checkup div.disease-progression, div.checkup div.medicine-group {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+div.checkup div.history-checkup div.title, div.checkup div.disease-progression div.title, div.checkup div.medicine-group div.title {
+    font-weight: bold;
+    margin: 0;
+    padding: 6px 0 6px 25px;
+    color: #216960;
+    text-shadow: 0 1px #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#d5d5d5));
+    background: -webkit-linear-gradient(top, #fefefe, #d5d5d5);
+    background: -moz-linear-gradient(top, #fefefe, #d5d5d5);
+    background: -ms-linear-gradient(top, #fefefe, #d5d5d5);
+    background: -o-linear-gradient(top, #fefefe, #d5d5d5);
+    background: linear-gradient(top, #fefefe, #d5d5d5);
+}
+div.checkup div.history-checkup div.infos, div.checkup div.disease-progression div.infos, div.checkup div.medicine-group div.infos {
+    background: #FAFAFA;
+    padding: 5px 5px; 
+    padding-bottom: 13px;
+    overflow-x: hidden;
+    height: 210px;
+    width: 100%;
+}
+div.checkup div.history-checkup div.infos div.one-info, div.checkup div.medicine-group div.infos div.one-info {
+    width: 99%;
+    padding: 3px;
+    background-color: #DCDCDC;
+    border: 1px solid #DDDDDD;
+    margin: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    padding-left: 8px; 
+}
+div.checkup div.disease-progression div.infos div.one-info {
+    border: 1px solid #DDDDDD;
+    margin: 2px;
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+div.checkup div.disease-progression div.infos div.one-info p {
+    max-height: 60px;
+    overflow: auto;
+    margin-bottom: 0;
+    padding: 3px 4px; 
+}
+div.checkup div.disease-progression div.infos div.one-info div.date {
+    background-color: #DCDCDC;
+    padding: 0 4px;
+}
+div.checkup div.history-checkup div.infos div.one-info:hover, div.checkup div.medicine-group div.infos div.one-info:hover{
+    background-color: #FFD259;
+    border: 1px solid orange;
+}
+div.checkup div.disease-progression div.infos div.one-info:hover div.date {
+    background-color: #FFD259;
+    border: 1px solid orange;
+}
+div.checkup div.history-checkup div.row {
+    margin: 0;
+}
+div.checkup div.history-checkup div.infos div.col-md-6 {
+    padding: 0 5px;
+}
+
+/* prescription */
+
+div.checkup div.prescription {
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+div.checkup div.prescription div.header-prescription div.logo {
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+div.checkup div.prescription div.header-prescription div.logo h6 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+div.checkup div.prescription div.header-prescription div.center {
+    float: left;
+    padding-top: 20px; 
+    margin-left: 30px;
+    width: 50%;
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+div.checkup div.prescription div.header-prescription div.right {
+    float: left;
+    margin-left: 30px;
+}
+div.checkup div.prescription div.header-prescription div.right img {
+    width: 150px;
+    height: 80px;
+}
+div.checkup div.prescription div.main-prescription div.title h4 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+div.checkup div.prescription div.main-prescription form h6 {
+    margin-bottom: 0;
+    line-height: 29px;
+}
+div.checkup div.prescription div.main-prescription form input {
+    width: 76%;
+    border: none;
+    border-bottom: 2px dotted #1c1c1c;
+    height: 20px;
+    padding: 3px;
+    margin-left: 30px;
+}
+div.checkup div.prescription div.main-prescription form input:focus {
+    outline: none;
+    box-shadow: none;
+}
+div.checkup div.prescription div.main-prescription form div.survival div.one-info input {
+    width: 43%;
+    margin-left: 10px;
+    font-size: 13px;
+    height: 20px;
+}
+div.checkup div.prescription div.main-prescription form div.survival div.one-info h6 {
+    font-size: 16px;
+    vertical-align: -webkit-baseline-middle;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med {
+    border-bottom: 1px solid #ddd;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med div.float-left {
+    width: 80%;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med div.float-left p {
+    margin-bottom: 0px;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med div.float-left p.name-med {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med div.float-left p.introduction span {
+    vertical-align: -webkit-baseline-middle;
+    font-size: 14px;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med div.float-left p.introduction input {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med div.float-right {
+    width: 20%;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med div.float-right span {
+    font-size: 13px;
+    vertical-align: -webkit-baseline-middle;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med div.float-right input {
+    width: 23px;
+    font-size: 13px;
+    margin-left: 0;
+}
+div.checkup div.prescription div.main-prescription form div.ls-med div.float-right i {
+    color: #797979;
+    cursor: pointer;
+    margin-left: 20px;
+}
+div.checkup div.prescription div.main-prescription form div.note-sign {
+    margin-top: 50px;
+}
+div.checkup div.prescription div.main-prescription form div.note-sign textarea {
+    background: url(../../../assets/images/background/line.png) repeat scroll 0 0 transparent;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 0;
+    border: medium none;
+    height: 95px;
+    width: 357px;
+}
+div.checkup div.prescription div.main-prescription form div.note-sign textarea:focus {
+    box-shadow: none;
+    outline: none;
+}
+div.checkup div.prescription div.main-prescription form div.note-sign div.sign {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+div.checkup div.prescription div.main-prescription form div.note-sign div.sign input {
+    width: 100px;
+    margin-left: 0;
+}
+div.checkup div.prescription div.main-prescription form div.note-sign div.sign h6 {
+    margin: 10px 0 40px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+div.checkup div.history-checkup.list-med div.infos {
+    display: none;
+}
+div.checkup div.history-checkup.list-med div.infos.active {
+    display: block;
+}

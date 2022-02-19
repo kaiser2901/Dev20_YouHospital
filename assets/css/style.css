@@ -1,0 +1,723 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #1c1c1c;
+	letter-spacing: 1px;
+    line-height: 1.42857;
+}
+
+/*Header*/
+header.page-header div.uper {
+    background-color: #F8F8F8;
+}
+header.page-header div.uper div.d-flex{
+    padding: 17px 0;
+}
+header.page-header div.uper div.d-flex div.text-left{
+    width: 70%;
+}
+@media (max-width: 768px){
+    header.page-header div.uper div.d-flex div.text-left a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+header.page-header div.uper div.d-flex div.text-right{
+    width: 30%;
+}
+header.page-header div.uper div.d-flex a{
+    color: #999;
+    font-size: 13px;
+    margin-right: 15px;
+    transition: 0.4s all;
+}
+@media (max-width: 576px){
+    header.page-header div.uper div.d-flex {
+        display: block!important;
+    }
+    header.page-header div.uper div.d-flex div.text-left{
+        width: 100%;
+        text-align: center!important;
+    } 
+    header.page-header div.uper div.d-flex div.text-right {
+        width: 100%;
+        text-align: center!important;
+        margin-top: 10px; 
+    }
+}
+header.page-header div.uper div.d-flex a:hover {
+    color: #1c1c1c;
+}
+header.page-header div.lower {
+    padding: 30px 0;
+}
+header.page-header div.lower h1{
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    color: #1c1c1c;
+}
+header.page-header div.lower h1 img {
+    margin-right: 10px;
+}
+header.page-header div.lower h1 span {
+    vertical-align: middle;
+}
+@media (max-width: 768px){
+    header.page-header div.lower {
+        display: none;
+    }
+}
+/*Navigation*/
+div.navigation {
+    padding: 7px 0;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li {
+    display: flex;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li:after{
+    content: "|";
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin: 2px 20px;
+    color: #727475;
+    font-weight: 400;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li a{
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: 0.4s all;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li a:hover {
+    color: #1c1c1c;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li:last-child a {
+    background-color: #42B3E5;
+    border-radius: 2px;
+    color: #fff;
+    padding: 8px 15px;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li:last-child:after {
+    content: '';
+    margin: 0;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li:last-child a:hover {
+    opacity: 0.8;
+}
+div.navigation nav.navbar a.navbar-brand{
+    display: none;
+}
+@media(max-width: 768px){
+	div.navigation nav.navbar div.collapse ul.navbar-nav li {
+		padding: 10px 20px;
+		border-bottom: 1px dashed #e8e8e8;
+	}
+    div.navigation nav.navbar div.collapse ul.navbar-nav li:after {
+        content: '';
+    } 
+    div.navigation nav.navbar a.navbar-brand{
+        display: block;
+    }
+}
+
+/*Slider*/
+
+div.slider {
+	width: 100%;
+	background-image: url('../images/slider/slider_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+	padding: 100px;
+}
+div.slider div.block {
+	background: rgba(0,0,0,0.6);
+	width: 480px;
+	color: #fff;
+	padding: 60px 40px;
+}
+div.slider div.block h3 {
+	display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+div.slider div.block p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+div.slider div.block a {
+	display: inline-block;
+    text-decoration: none;
+    padding: 11px 48px;
+    border: 3px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    background: transparent;
+    font-weight: 350;
+    line-height: 18px;
+    font-size: 14px;
+    transition: 0.4s all;
+}
+div.slider div.block a:hover {
+	background-color: rgb(0, 102, 166);
+ 	border: 3px solid rgb(0, 102, 166);
+}
+@media (max-width: 768px){
+	div.slider {
+		padding: 50px;
+	}
+	div.slider div.d-flex {
+		justify-content: center;
+	}
+}
+@media (max-width: 576px){
+	div.slider div.block h3 {
+		font-size: 18px;
+	}
+    div.slider div.block p {
+        font-size: 12px;
+    }
+	div.slider div.block a {
+		padding: 11px 20px;
+        font-size: 12px;
+	}
+}
+/*ultility*/
+
+div.ultility {
+	padding: 50px 0;
+}
+div.ultility div.title h2 {
+	text-align: center;
+    color: #111;
+    margin-bottom: 20px;    
+    font-size: 28px;
+}
+div.ultility div.title div.line{
+	height: 1px;
+	width: 96px;
+	margin: auto;
+	border-bottom: 2px solid #c38e00;
+	margin-bottom: 40px;
+}
+div.ultility div.block a.link-ultility {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 207px;
+	background: rgb(0, 102, 166);
+    transition: 0.4s all;
+    text-decoration: none;
+}
+div.ultility div.block a.link-ultility:hover {
+	opacity: 0.9;
+}
+div.ultility div.block a.link-ultility div.text {
+    max-width: 70%;
+	text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+div.ultility div.block a.link-ultility div.text i {
+	font-size: 56px;
+	margin-bottom: 15px;
+}
+
+/*why-me*/
+
+div.why-me {
+	padding: 50px 0;
+}
+div.why-me div.title h2 {
+	text-align: center;
+    color: #111;
+    margin-bottom: 20px;    
+    font-size: 28px;
+}
+div.why-me div.title div.line{
+	height: 1px;
+	width: 96px;
+	margin: auto;
+	border-bottom: 2px solid #c38e00;
+	margin-bottom: 40px;
+}
+div.why-me div.block div.icon div.background {
+	width: 60px;
+	height: 60px;
+	margin: auto;
+	background: #1c1c1c;
+	border-radius: 50%;
+	position: relative;
+}
+div.why-me div.block div.icon div.background i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 28px;
+    font-weight: 600;
+}
+div.why-me div.block h6 {
+	text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+div.why-me div.block p {
+	text-align: justify;
+	font-size: 14px;
+}
+div.why-me a.view-more {
+    font-size: 18px;
+    padding: 16px 20px;
+    background: #0066a6;
+    color: #fff;
+    border-radius: 35px;
+    display: inline-block;
+    margin: auto;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.4s all;
+}
+div.why-me a.view-more:hover {
+	opacity: 1;
+}
+
+@media(max-width: 560px){
+    div.why-me div.block {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+}
+
+/*page-footer*/
+footer.page-footer {
+	margin-top: 50px;
+}
+footer.page-footer div.uper-footer {
+    padding: 80px 0;
+    background: #27251f;
+}
+footer.page-footer div.uper-footer div.block {
+    margin-bottom: 25px;
+}
+footer.page-footer div.uper-footer div.block h4 {
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 15px;
+}
+footer.page-footer div.uper-footer div.block p {
+    color: #afafaf;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 400;
+}
+footer.page-footer div.uper-footer div.links {
+    margin-bottom: 25px;
+}
+footer.page-footer div.uper-footer div.links h4 {
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 15px;
+}
+footer.page-footer div.uper-footer div.links > div {
+    margin-top: 8px;
+} 
+footer.page-footer div.uper-footer div.links a {
+    color: #afafaf;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s all;
+}
+footer.page-footer div.uper-footer div.links a:hover {
+    color: #f8f8f8;
+}
+footer.page-footer div.uper-footer div.map iframe {
+	width: 100%;
+	height: 200px;
+} 
+footer.page-footer div.lower-footer {
+	padding: 30px 0;
+	background-color: #333;
+	text-align: center;
+}
+footer.page-footer div.lower-footer p {
+	margin-bottom: 0;
+	font-size: 13px;
+	color: #fff;
+}
+
+/*dang-ky-kham*/
+
+div.dang-ky-kham {
+    padding: 50px 0 30px 0; 
+}
+div.dang-ky-kham div.title {
+    width: 571px;
+    margin: auto;
+}
+div.dang-ky-kham div.title h3{
+    color: #1c1c1c;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+div.dang-ky-kham div.title p {
+    text-align: center;
+    font-size: 15px;
+    padding: 0 16px;
+}
+div.dang-ky-kham div.form-dang-ky {
+    width: 571px;
+    margin: auto;
+    margin-top: 60px;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group{
+    position: relative;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group i{
+    left: 13px;
+    position: absolute;
+    top: 12px;
+    color: #9b9b9b;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group input{
+    padding: 1px 1px 1px 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    -webkit-appearance: none;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group input[readonly]{
+    background-color: #fff;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group input:focus{
+    outline: none;
+    box-shadow: none;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group div.select span {
+    position: absolute;
+    right: 8px;
+    top: 15px;
+    font-size: 12px;
+    color: #555;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group select {
+    padding: 1px 1px 1px 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    -webkit-appearance: none;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: gray;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group select:focus {
+    outline: none;
+    box-shadow: none;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group textarea{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 121px;
+    padding: 10px;
+    resize: none;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group textarea:focus{
+    outline: none;
+    box-shadow: none;    
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham button {
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 50px;
+    background: #0066a6;
+    color: #fff;
+    border-radius: 35px;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham button:hover {
+    opacity: 1;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham button:focus {
+    outline: none;
+    box-shadow: none;
+}
+div.dang-ky-kham div.form-dang-ky form#dang-ky-kham button i{
+    margin-left: 10px;
+}
+@media (max-width: 576px){
+    div.dang-ky-kham div.form-dang-ky {
+        width: auto;
+        padding: 0 20px;
+    }
+    div.dang-ky-kham div.title{
+        width: auto;
+        padding: 0 20px;
+    }
+    div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group.d-flex {
+        flex-direction: column;
+    }
+    div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group.w-50 {
+        width: 100%!important;
+    }
+    div.dang-ky-kham div.form-dang-ky form#dang-ky-kham div.form-group div.select {
+        margin-left: 0!important;
+    }
+}
+
+/*breadcrumbs*/
+
+div.breadcrumbs {
+    background-color: #f8f8f8;
+}
+div.breadcrumbs div.container {
+    padding: 17px 0;
+}
+div.breadcrumbs div.container a {
+    color: #999;
+    font-size: 13px;
+    margin: 0 5px;
+    transition: 0.4s all;
+    text-decoration: none;
+}
+div.breadcrumbs div.container a.active {
+    color: #1c1c1c;
+}
+div.breadcrumbs div.container a:hover {
+    color: #1c1c1c;
+}
+div.breadcrumbs div.container span {
+    color: #999;
+    font-size: 13px;
+}
+@media (max-width: 576px) {
+    div.breadcrumbs {
+        padding: 0 10px;
+    }
+}
+
+/*login*/
+div.login {
+    padding: 50px 0 30px 0;
+}
+div.login div.title h4 {
+    text-align: center;
+    font-size: 30px;
+}
+div.login div.form-login {
+    width: 571px;
+    margin: auto;
+    margin-top: 30px;
+}
+div.login div.form-login form div.form-group{
+    position: relative;
+    margin: 30px 0 0 0;
+}
+div.login div.form-login form div.form-group i{
+    left: 16px;
+    position: absolute;
+    top: 21px;
+    color: #9b9b9b;
+}
+div.login div.form-login form div.form-group input{
+    padding: 1px 1px 1px 46px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 60px;
+    -webkit-appearance: none;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+}
+div.login div.form-login form div.form-group input:focus{
+    outline: none;
+    box-shadow: none;
+}
+div.login div.form-login form button {
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+    height: 60px;
+    background-color: #42B3E5;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s all;
+    opacity: 1;   
+}
+div.login div.form-login form button:focus {
+    box-shadow: none;
+    outline: none;
+}
+div.login div.form-login form button:hover {
+    background-color: #199ad4;
+}
+div.login div.form-login form > div.forgot-pass {
+    margin-top: 30px;
+    text-align: center;
+}
+div.login div.form-login form > div.forgot-pass a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(0,0,0,.5);
+    transition: 0.4s all;
+}
+div.login div.form-login form > div.forgot-pass a:hover {
+    color: #1c1c1c;
+}
+@media (max-width: 576px) {
+    div.login div.form-login {
+        padding: 0 10px;
+        width: 100%;
+    }
+}
+
+/* list-doctors */
+div.list-doctors {
+    padding: 50px 0;
+}
+
+div.list-doctors div.one-doctor {
+    transition: 0.4s all;
+    padding: 15px 0; 
+    border: 1px solid hsla(0,0%,100%,0);
+    border-bottom: 1px solid #eee;
+}
+
+div.list-doctors div.one-doctor:hover {
+    border: 1px solid rgba(0,0,0,.14);
+    border-radius: 5px;
+    box-shadow: 4px 8px 20px rgba(0,0,0,.05);
+}
+
+div.list-doctors div.one-doctor div.avatar a {
+    background: #fff url(/static/build/f470667….jpg) no-repeat 50% 50%/contain;
+    border-radius: 4px 4px 0 0;
+    display: block;
+    height: 130px;
+    overflow: hidden;
+    width: 130px;
+    margin: auto;
+    background-position-y: 20%;
+}
+
+div.list-doctors div.one-doctor div.personal h2 {
+    font-size: 16px;
+}
+
+div.list-doctors div.one-doctor div.personal a {
+    text-decoration: none; 
+    color: #0066a6;
+    transition: all .1s;
+}
+
+div.list-doctors div.one-doctor div.personal div a {
+    font-size: 15px;
+}
+
+div.list-doctors div.one-doctor div.personal div i {
+    font-size: 14px;
+}
+
+div.list-doctors div.one-doctor div.personal div.float-right {
+    padding: 0 30px 0 60px;
+}
+
+div.list-doctors div.one-doctor div.personal div.float-right div.desc p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+div.list-doctors div.one-doctor div.personal div.float-right div.desc p a {
+    font-style: italic;
+    font-size: 13px;
+}
+
+div.list-doctors div.search-doctor form select {
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: #777;
+    font-size: 12px;
+    height: 38px;
+    padding: 0 14px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+div.list-doctors div.search-doctor form div.form-group {
+    position: relative;
+}
+
+div.list-doctors div.search-doctor form div.form-group i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #777;
+    cursor: pointer;
+}
+
+div.list-doctors div.search-doctor form input {
+    color: #777;
+    font-size: 12px;
+    height: 38px;
+    width: 200px;
+}
+
+div.list-doctors div.search-doctor form button {
+    display: none;
+}
+
+div.list-doctors div.search-doctor form select:focus, div.list-doctors div.search-doctor form input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #ddd;
+}
+
+
+
+
+

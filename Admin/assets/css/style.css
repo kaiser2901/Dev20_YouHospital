@@ -1,0 +1,460 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #1c1c1c;
+	letter-spacing: 1px;
+    line-height: 1.42857;
+}
+
+nav ul.pagination li.page-item a.page-link {
+    color: #999;
+    transition: 0.4s all;
+}
+
+nav ul.pagination li.page-item a.page-link.active {
+    color: #1c1c1c;
+}
+
+nav ul.pagination li.page-item a.page-link:hover {
+    color: #1c1c1c;
+}
+
+nav ul.pagination li.page-item a.page-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+form div.form-group p {
+    margin-top: 16px;
+}
+
+a.dropdown-item {
+    color: #999;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+ /* page-header */
+header.page-header {
+	padding: 15px 0;
+	background-color: #f8f8f8;
+}
+header.page-header div.left-header img {
+	display: inline-block;
+	height: 30px;
+	margin-right: 10px;
+}
+header.page-header div.left-header a {
+	text-transform: uppercase;
+	color: #999;
+	font-size: 14px;
+	transition: 0.4s all;
+	text-decoration: none;
+}
+header.page-header div.left-header a:hover {
+	color: #1c1c1c;
+}
+header.page-header div.right-header div.notification {
+	display: inline-block;
+    margin-right: 15px;
+}
+header.page-header div.right-header div.notification > a {
+	color: #999;
+    font-size: 20px;
+    vertical-align: middle;
+    transition: 0.4s all;
+}
+header.page-header div.right-header div.notification > a:hover {
+	color: #1c1c1c;
+}
+header.page-header div.right-header div.nav-account a.dropdown-toggle {
+	color: #999;
+	transition: 0.4s all;
+	text-decoration: none;	
+}
+header.page-header div.right-header div.nav-account a.dropdown-toggle:hover {
+	color: #1c1c1c;
+}
+header.page-header div.right-header div.nav-account img{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+header.page-header div.right-header div.nav-account div.dropdown-menu {
+	padding: 0;
+} 
+header.page-header div.right-header div.nav-account div.dropdown-menu a{
+	font-size: 14px;
+	padding: 10px 24px;
+}
+header.page-header div.right-header div.nav-account div.dropdown-menu a i {
+	display: inline-block;
+	width: 20px;
+	font-size: 14px;
+	padding-right: 7px; 
+}
+header.page-header div.right-header div.nav-account div.dropdown-menu a:last-child{
+	border-top: 1px solid #e8e8e8;
+}
+/*Navigation*/
+div.navigation {
+    padding: 7px 0;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li {
+    display: flex;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li:after{
+    content: "|";
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin: 2px 20px;
+    color: #727475;
+    font-weight: 400;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li a{
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: 0.4s all;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li a:hover {
+    color: #1c1c1c;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li:last-child:after {
+    content: '';
+    margin: 0;
+}
+div.navigation nav.navbar a.navbar-brand{
+    display: none;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li div.dropdown-menu {
+	padding: 0;
+} 
+div.navigation nav.navbar div.collapse ul.navbar-nav li div.dropdown-menu a{
+	font-size: 14px;
+	padding: 10px 24px;
+}
+div.navigation nav.navbar div.collapse ul.navbar-nav li div.dropdown-menu a i {
+	display: inline-block;
+	width: 20px;
+	font-size: 14px;
+	padding-right: 7px; 
+}
+@media(max-width: 1200px){
+	div.navigation nav.navbar div.collapse ul.navbar-nav li {
+		padding: 10px 20px;
+		border-bottom: 1px dashed #e8e8e8;
+	}
+    div.navigation nav.navbar div.collapse ul.navbar-nav li:after {
+        content: '';
+    } 
+    div.navigation nav.navbar a.navbar-brand{
+        display: block;
+    }
+}
+
+/*Footer*/
+div.footer {
+	padding: 15px 0;
+	background-color: #f8f8f8;
+	text-align: center;
+}
+div.footer p {
+	color: #999;
+	margin-bottom: 0;
+}
+
+/*add-patient*/
+div.add-patient {
+	padding: 50px 0;
+}
+div.add-patient div.title h4 {
+	text-align: center;
+	font-size: 28px;
+}
+div.add-patient div.form-add-patient form div.form-group {
+	position: relative;
+}
+div.add-patient div.form-add-patient form input[type="text"] {
+	padding: 1px 1px 1px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    -webkit-appearance: none;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+}
+div.add-patient div.form-add-patient form i {
+	position: absolute;
+	top: 41px;
+	color: #9b9b9b;
+	right: 30px;
+}
+div.add-patient div.form-add-patient form input:focus {
+	outline: none;
+	box-shadow: none;
+}
+div.add-patient div.form-add-patient form label.form-check-label {
+    font-size: 14px;
+    margin-left: 8px;
+    line-height: 19px;
+    padding-top: 4px;
+}
+div.add-patient div.form-add-patient form div.form-group input[readonly]{
+    background-color: #fff;
+}
+div.add-patient div.form-add-patient form div.form-group select {
+   	padding: 1px 1px 1px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    -webkit-appearance: none;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: gray;
+}
+div.add-patient div.form-add-patient form div.form-group span.ui-selectmenu-button {
+    width: 100%;
+    border-radius: 4px;
+    height: 40px;
+    -webkit-appearance: none;
+    font-size: 14px;
+    line-height: 29px;
+    color: gray;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+div.add-patient div.form-add-patient form div.form-group span.ui-selectmenu-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+div.add-patient div.form-add-patient form div.form-group span.ui-selectmenu-icon {
+    margin-top: 6px;
+} 
+div.add-patient div.form-add-patient form div.form-group select:focus {
+    outline: none;
+    box-shadow: none;
+}
+div.add-patient div.form-add-patient form textarea{
+    padding: 10px 1px 1px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 150px;
+    -webkit-appearance: none;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+}
+div.add-patient div.form-add-patient form button.btn {
+	text-align: center;
+    font-size: 16px;
+    margin-top: 25px;
+    padding: 14px 0px;
+    background: #0066a6;
+    color: #fff;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+div.add-patient div.form-add-patient form button.btn:hover {
+	opacity: 1;
+}
+div.add-patient div.form-add-patient form button.btn:focus {
+	outline: none;
+}
+
+/*Patient*/
+
+div.patient {
+	padding: 50px 0;
+}
+div.patient div.title h4 {
+	text-align: center;
+	font-size: 28px;
+}
+
+/*breadcrumbs*/
+
+div.breadcrumbs {
+    background-color: #f8f8f8;
+}
+div.breadcrumbs div.container {
+    padding: 17px 0;
+}
+div.breadcrumbs div.container a {
+    color: #999;
+    font-size: 13px;
+    margin: 0 5px;
+    transition: 0.4s all;
+    text-decoration: none;
+}
+div.breadcrumbs div.container a.active {
+    color: #1c1c1c;
+}
+div.breadcrumbs div.container a:hover {
+    color: #1c1c1c;
+}
+div.breadcrumbs div.container span {
+    color: #999;
+    font-size: 13px;
+    margin: 0 5px;
+}
+@media (max-width: 576px) {
+    div.breadcrumbs {
+        padding: 0 10px;
+    }
+}
+
+/* statistic */
+div.statistic {
+    padding: 50px 0;
+}
+div.statistic div.statistic-patient {
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    padding: 28px 25px;
+    border-radius: 0.35rem;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-left: .25rem solid #4e73df;
+    width: 90%!important;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+div.statistic div.statistic-patient div.col-auto i {
+    color: #dddfeb;
+    font-size: 40px;
+    line-height: 50px;
+}
+div.statistic div.statistic-patient div.col h6 {
+    color: #4e73df;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+div.statistic div.statistic-patient div.col p {
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #5a5c69;
+    font-size: 1.25rem;
+}
+@media (min-width: 1200px){
+    div.statistic div.statistic-patient {
+        max-width: 23%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    div.statistic div.statistic-patient {
+        max-width: 48%;
+    }
+}
+@media (max-width: 768px){
+    div.statistic div.statistic-patient {
+        margin: 20px auto;
+    }
+}
+div.statistic div.title h4 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+div.statistic div.statistic-doctor {
+    border-left: .25rem solid #1cc88a!important;
+}
+div.statistic div.statistic-doctor div.col h6 {
+    color: #1cc88a!important;
+}
+div.statistic div.statistic-app {
+    border-left: .25rem solid #36b9cc!important;
+}
+div.statistic div.statistic-app div.col h6 {
+    color: #36b9cc!important;
+}
+div.statistic div.statistic-emp {
+    border-left: .25rem solid #f6c23e!important;
+}
+div.statistic div.statistic-emp div.col h6 {
+    color: #f6c23e!important;
+}
+
+/* list-medicine */
+div.list-medicine div.add-medicine a {
+    display: block;
+    line-height: 38px;
+    color: #fff;
+    padding: 0 30px;
+    box-sizing: border-box;
+    height: 38px;
+    transition: 0.4s all;
+    background-color: #17a2b8;
+}
+div.list-medicine div.add-medicine a:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+div.list-medicine div.form-search form input {
+    border: 1px solid #ccc;
+}
+div.list-medicine div.form-search form input:focus {
+    outline: none;
+    box-shadow: none;
+}
+div.list-medicine table.table-data tr th, div.list-medicine table.table-data tr td {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 13px;
+}
+div.list-medicine table.table-med-group tr th, div.list-medicine table.table-med-group tr td {
+    vertical-align: middle;
+    font-size: 13px;
+}
+div.list-medicine table.table-med-group tr td {
+    border-left: 1px solid #17a2b8;
+    padding: 0;
+}
+div.list-medicine table.table-med-group tr td.active {
+    background-color: #B9D9D5; 
+}
+div.list-medicine table.table-med-group tr td a {
+    display: block;
+    padding: 10px 20px;
+    color: #999;
+    text-decoration: none;
+}
+div.list-medicine table.table-med-group tr td.active a {
+    color: #15428b;
+}
+
+.table tr th, .table tr td {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
